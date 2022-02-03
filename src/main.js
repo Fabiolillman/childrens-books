@@ -8,5 +8,10 @@ Vue.config.productionTip = false
 new Vue({
   router,
   store,
+  data(){
+    return {
+      books: []
+    }
+  },
   render: h => h(App)
 }).$mount('#app')
