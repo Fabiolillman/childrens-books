@@ -1,15 +1,21 @@
 <template>
   <div>
-    <h1>singlebook</h1>
-    <p>{{book}}</p>
+    <!-- <h1>singlebook</h1> -->
+    <!-- <p>{{book}}</p> -->
+    <BookCover :book="book"/>
+    <SingleBook :book="book"/>
+    
     <button @click="sendToReadList">Send To ReadingList</button>
     
   </div>
 </template>
 
 <script>
-
+ import BookCover from '../components/BookCover.vue'
+ import SingleBook from '../components/SingleBookComp.vue'
 export default {
+ 
+  components: {BookCover,SingleBook},
   data(){
     return{
       // newArr:[]

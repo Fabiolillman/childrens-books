@@ -2,7 +2,7 @@
   <div id="app">
     <div id="nav">
       <router-link to="/singlebook/:id">Single book</router-link> |
-      <router-link to="/BookList">BookList</router-link> |
+      <router-link to="/">BookList</router-link> |
       <router-link to="/readingList">ReadingList</router-link> 
      
     </div>

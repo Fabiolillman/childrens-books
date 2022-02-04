@@ -1,13 +1,29 @@
 <template>
-    <div class="book-cover">
-      <h2>{{book.Title}}</h2>
+  <router-link :to="'/singlebook/'+book.id" >
+    <div class="book-cover" >
+      <h2 >{{book.Title}}</h2>
       <p>{{book.Author}}</p>
+      <!-- {{books}} -->
+      <!-- <h1>Testing</h1> -->
     </div>
+    <!-- v-for="book in books" :key="book.id" -->
+  </router-link>
 </template>
 
 <script>
 export default {
-    props: ['book']
+    props: ['book'],
+    computed:{
+            // books(){
+            //   return this.$store.state.books
+            // },
+
+    //             characters(){
+    //   return this.$store.state.characters
+    // }
+
+            
+          },
 
 }
 </script>

@@ -20,4 +20,14 @@ export default new Vuex.Store({
 
   },
 
+  // actions:{
+  //   async fetchCharacters( context ){
+  //     console.log(context);
+  //     const response = await fetch('https://swapi.dev/api/people')
+  //     const data = await response.json()
+      
+  //     context.commit('saveCharacters', data.results)      
+  //   }
+  // },
+
 })

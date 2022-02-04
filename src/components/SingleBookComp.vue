@@ -1,25 +1,28 @@
 <template>
-  <div>
-     <!-- <p> {{book}}</p>
-     <p>hello</p>
-       -->
+  <div class="body">
+    <header>
+     <h1> {{book.Title}}</h1>
+     <p>By {{book.Author}}</p>
+     </header>
+     <main>
+     <p>{{book.Plot}}</p>
+     </main>
+     <footer>
+     <p>Audience: {{book.Audience}}</p>
+     <p>First published: {{book.Year}}</p>
+     <p>Pages: {{book.Pages}}</p>
+     <p>Publisher: {{book.Publisher}}</p>
+     </footer>
   </div>
 </template>
 
 <script>
-
 export default {
-
-computed:{
-  // book(){
-  //    return this.$store.state.books.find(book => book.id == this.$route.params.id)
-  // }
-    // books(){
-    //           return this.$store.state.books
-    //         }
+props: ['book'],
 }
-}
-</script>
+</script >
 
-<style></style>
+<style scoped lang="scss">
+
+</style>
 
